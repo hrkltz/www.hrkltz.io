@@ -49,9 +49,7 @@
 
             body {
                 align-items: center;
-                background-color: #FAFAFA;
                 box-sizing: border-box;
-                color: #050505;
                 display: flex;
                 flex-direction: column;
                 font-family: 'Outfit';
@@ -81,10 +79,6 @@
                 text-align: center;
             }
 
-            svg {
-                fill: #050505;
-            }
-
             h1 {
                 font-weight: 100;
                 margin: 0px 0px 15px 0px;
@@ -92,9 +86,7 @@
 
             a {
                 font-weight: 200;
-                background-color: #050505;
                 border-radius: 15px;
-                color: #FAFAFA;
                 display: block;
                 margin-bottom: 15px;
                 max-width: 680px;
@@ -102,6 +94,38 @@
                 text-align: center;
                 width: 100%;
                 text-decoration: unset;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: #050505;
+                    color: #FAFAFA;
+                }
+
+                svg {
+                    fill: #FAFAFA;
+                }
+
+                a {
+                    background-color: #FAFAFA;
+                    color: #050505;
+                }
+            }
+
+            @media (prefers-color-scheme: light) {
+                body {
+                    background-color: #FAFAFA;
+                    color: #050505;
+                }
+
+                svg {
+                    fill: #050505;
+                }
+
+                a {
+                    background-color: #050505;
+                    color: #FAFAFA;
+                }
             }
         </style>
     </head>
