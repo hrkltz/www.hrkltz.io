@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>hrkltz</title>
         <base href="/">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="Welcome to www.hrkltz.io!">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- Inline result from <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet"> -->
@@ -48,9 +48,9 @@
 
             body {
                 align-items: center;
-                background-color: #FFFFFF;
+                background-color: #FAFAFA;
                 box-sizing: border-box;
-                color: #000000;
+                color: #050505;
                 display: flex;
                 flex-direction: column;
                 font-family: 'Outfit';
@@ -86,9 +86,9 @@
 
             a {
                 font-weight: 200;
-                background-color: #000000;
+                background-color: #050505;
                 border-radius: 15px;
-                color: #ffffff;
+                color: #FAFAFA;
                 display: block;
                 margin-bottom: 15px;
                 max-width: 680px;
@@ -99,9 +99,9 @@
             }
         </style>
     </head>
-    <body>
+    <body onpageshow="onPageShow(event)">
             <header>
-                <img src="https://avatars.githubusercontent.com/u/125131106?s=512" alt="Logo of hrkltz.io" width="128" />
+                <img src="https://avatars.githubusercontent.com/u/125131106?s=512" alt="Logo of hrkltz.io" width="128" height="128">
             </header>
             <section>
                 <h1>Links</h1>
@@ -114,5 +114,12 @@
                 <a href="https://scintilla.hrkltz.io" target="_blank">Scintilla</a>
                 <a href="https://labdroid.hrkltz.io" target="_blank">LabDroid</a>
             </section>
+            <script>
+                function onPageShow(event) { 
+                    if (!event.persisted) {
+                        // TODO
+                    }
+                }
+            </script>
     </body>
 </html>
